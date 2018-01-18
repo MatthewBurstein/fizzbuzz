@@ -1,11 +1,7 @@
 def fizzbuzz(number)
-  if number % 15 == 0
-    'fizzbuzz'
-  elsif number % 3 == 0
-    'fizz'
-  elsif number % 5 == 0
-    'buzz'
-  else
-    number
-  end
+  output = ""
+  output << "fizz" if number % 3 == 0
+  output << "buzz" if number % 5 == 0
+  output = number if output == ""
+  output
 end
